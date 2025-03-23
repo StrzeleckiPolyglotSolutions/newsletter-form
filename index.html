@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;div style="font-family: Arial, sans-serif; text-align: center;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Subscribe to the newsletter&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;form id="subscribeForm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="email" id="email" name="email" placeholder="your email" required style="padding: 10px; font-size: 16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button type="submit" style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; cursor: pointer;"&gt;Subscribe&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p id="message" style="color: green; font-weight: bold;"&gt;&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">document.getElementById('subscribeForm').addEventListener('submit', function(event) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>event.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const email = document.getElementById('email').value;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const message = document.getElementById('message');</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Simulate sending the email (you would replace this with actual email sending logic)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>message.textContent = 'Thank you for subscribing!';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('email').value = ''; // Clear the input field</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}, 1000);</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+</body>
+</html>
